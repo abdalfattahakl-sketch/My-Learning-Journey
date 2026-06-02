@@ -42,4 +42,4 @@ Inside this repository, each folder represents a milestone dedicated to masterin
 
 ## 👤 Author
 
-*   **Mohamed El-Sheikh** - *Educator & Web Developer*
+*   **Abd Al-Fattah Akl** - *Educator & Web Developer*
