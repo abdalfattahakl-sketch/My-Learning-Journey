@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معلومات  عن المستخدم</title>
+    <meta name="description" content="معلومات عن المستخدم">
+    <meta name="keywords" content="معلومات, مستخدم, بيانات, صفحة, ويب">
+    <meta name="author" content="Abd Al-fattah Akl">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        nav ul li{
+            display: inline-block;
+        }
+        /* هنا هذا يجعل الرابط بلوك كما يحذف الخطوط السفيلة مجرد تجربة الان */
+        nav ul li a{
+            display: block;
+            text-decoration: none;
+        }
+        #urname, #age, #email{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!--أولا اعداد الصفحة بما يتناسب Semantic Elements
+    1-header
+    2-nav يجب ان يحتوي فقط على صفحات فارغة الان بيحيث يكون سهل ربطها فيما بعد
+    3-main
+    بداخلة 2fieldset الاول يستخدم للبيانات الشخصية
+    الثاني التفضيلات والتواصل
+    4-footer-->
+    <header>
+        <img src="images/header.png" alt="my header" width="100%">
+    </header>
+    <nav align="center">
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="user.html">معلومات المستخدم</a></li>
+            <li><a href="#">معلومات عنّي</a></li>
+            <li><a href="#">اتصل بي</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2 align="center"><strong><ins><mark>مهم</mark></ins></strong> تأكد من وضع البيانات الحقيقة حتى لا تتعرض للمسألة القانونية.</h2>
+        <!--اولا: البيانات الشخصية
+        تشمل كل من ( الاسم - العمر - البريد - الصورة الشخصية )
+        -->
+        <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>البيانات الشخصية</legend>
+            <div class="urname">
+                <label for="user">الاسم:</label>
+                <input type="text" required id="user" name="username" placeholder="أكتب اسمك الحقيقي">
+            </div>
+            <div class="age">
+              <label for="age">العمر:</label>  
+              <input type="number" id="age" name="age" min="6" max="18" >
+            </div>
+            <div class="email">
+                <label for="email">البريد الالكتروني</label>
+                <input type="email" id="email" name="email" placeholder="أكتب بريدك الالكتروني" required>
+            </div>
+            <div class="myphoto">
+                <label for="photo">الصورة الشخصية</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+        </fieldset>
+        <!--ثانيا: التفضيلات
+        تشمل كل من ( اللون المفضل - رابط وسيلة التواصل - رقم الهاتف - مستوى الطالب )
+        -->
+        <fieldset>
+            <legend>التفضيلات والتواصل</legend>
+            <div class="color">
+                <label for="color">اللون المفضل</label>
+                <input type="color" id="color" name="color">
+            </div>
+            <div class="contact">
+                <label for="contact">رابط وسيلة التواصل</label>
+                <input type="url" id="contact" name="contact" placeholder="أدخل رابط حسابك">
+            </div>
+            <div class="phone">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك">
+            </div>
+            <div class="level">
+                <label for="level">مستوى الطالب</label>
+                <input type="range" id="level" name="level" min="1" max="10" value="0">
+            </div>
+            <input type="submit" value="إرسال البيانات">
+            <input type="reset" value="إعادة تعيين البيانات">
+        </fieldset>
+    </form>
+    </main>
+    <footer>
+        <p>حقوق النشر &copy; 2026 Abd Al-fattah Akl. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
