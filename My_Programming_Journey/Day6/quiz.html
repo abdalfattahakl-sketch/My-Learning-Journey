@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النحو السالك - الاختبار الاول</title>
+    <meta name="description" content="first quiz for lesson1 - الاختبار الأول للدرس الأول">
+    <meta name="keywords" content="اختبار ، الدرس_الاول ، الاسم ، الفعل ، الحرف ،تحديد_المستوى">
+    <meta name="author" content="Abd Al-fattah Akl">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+    /* احب التجربة  */
+    body{
+        width: 100vw;
+        padding: 0%;
+        margin: auto;
+        background: url(images/BG.png);
+    }
+    header img {
+        width: 100%;
+    }
+    nav{
+        background-color: firebrick;
+        margin-top: auto;
+    }
+    nav ul li {
+        display: inline-block;
+        padding: 10px;
+        margin: 5px;
+        background-color:tomato;
+    }
+     nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+     nav ul li a:hover {
+        text-decoration: none;
+        color: black;
+
+    }
+    fieldset{
+        margin: auto;
+        width: 700px;
+        background-color: white;
+        padding: 5px;
+    }
+    legend{
+        background: firebrick;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+    }
+    h3{
+        text-align: center;
+        color: red;
+        text-decoration:underline black;
+    }
+   .btn{
+    padding: 5px;
+    margin: 5px;
+    background: firebrick;
+    color: white;
+    cursor: pointer;
+   }
+    footer
+    {
+        background-color: firebrick;
+        text-align: center;
+        height: 25px;
+        color: white;
+    }
+</style>
+</head>
+<body>
+    <!--
+    شروط الصفحة
+    1- Semantic Elements بحيث تتجاوب الصفحة مع الاعدادات الحديثة
+    2- عمل جزئين للصفحة اولا البيانات ثانيا الاسئلة
+    3-لا تنسى زر التسليم وزر اعادة 
+    -->
+    <header>
+        <img src="images/header.png" alt="my header image" title="النحو السالك" >
+    </header>
+    <nav align="center">
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="quiz.html">الاختبار الاول</a></li>
+            <li><a href="#">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>ارجو عدم الاستعجال والتأن في اختيار الاجابة، دمتم موفقين.</h3>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>بيانات الطالب الشخصية</legend>
+                <div class="name">
+                    <label for="name">اسم الطالب</label>
+                    <input type="text" name="username" id="name" required placeholder="قم بإدخال الاسم ثلاثي">
+                </div>
+                <div class="email">
+                    <label for="mail">البريد الالكتروني</label>
+                    <input type="email" name="email" id="mail" required placeholder="example@exm.com">
+                </div>
+                <div class="date">
+                    <label for="date">تاريخ الميلاد</label>
+                    <input type="date" name="u_date" id="date" required >
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>أسئلة الاختبار</legend>
+                <div class="q1">
+                    <h4>اختر الكلمة التي تدل على اسم</h4>
+                    <div class="a1_1">
+                        <input checked type="radio" name="a1" id="a1-1" value="eat_1">
+                        <label for="a1-1"> أكل</label>
+                    </div>
+                    <div class="a1_2">
+                        <input type="radio" name="a1" id="a1-2" value="in_1">
+                        <label for="a1-2"> في</label>
+                    </div>
+                    <div class="a1_3">
+                        <input type="radio" name="a1" id="a1-3" value="ahmed_1">
+                        <label for="a1-3"> أحمد</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="q2">
+                    <h4>اختر الكلمة التي تدل على فعل</h4>
+                    <div class="a2_1">
+                        <input checked type="radio" name="a2" id="a2-1" value="want_2">
+                        <label for="a2-1"> يريد</label>
+                    </div>
+                    <div class="a2_2">
+                        <input type="radio" name="a2" id="a2-2" value="on_2">
+                        <label for="a2-2"> على</label>
+                    </div>
+                    <div class="a2_3">
+                        <input type="radio" name="a2" id="a2-3" value="ali_2">
+                        <label for="a2-3"> علي</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="q3">
+                    <h4>اختر الكلمات التي تدل على اسم</h4>
+                    <div class="a3_1">
+                        <input checked type="checkbox" name="mbird" id="a3-1" value="bird_3">
+                        <label for="a3-1"> عصفور</label>
+                    </div>
+                    <div class="a3_2">
+                        <input type="checkbox" name="mplay" id="a3-2" value="play_3">
+                        <label for="a3-2"> يلعب</label>
+                    </div>
+                    <div class="a3_3">
+                        <input type="checkbox" name="mdrink" id="a3-3" value="drink_3">
+                        <label for="a3-3"> شرب</label>
+                    </div>
+                    <div class="a3_4">
+                        <input type="checkbox" name="mtree" id="a3-4" value="tree_3">
+                        <label for="a3-4"> شجرة</label>
+                    </div>
+                    <div class="a3_5">
+                        <input type="checkbox" name="mmoon" id="a3-5" value="moon_3">
+                        <label for="a3-5"> قمر</label>
+                    </div>
+                    <div class="a3_6">
+                        <input type="checkbox" name="mcow" id="a3-6" value="cow_3">
+                        <label for="a3-6"> بقرة</label>
+                    </div>
+                </div>
+                <hr>
+                <div class="q4">
+                    <h4>في أي وقت تذاكر دروسك عادة؟</h4>
+                    <input type="time" name="time">
+                </div>
+            </fieldset>
+            <div  align="center">
+            <input class="btn" type="submit" name="submit" value="ارسال">
+            <input class="btn" type="reset" value="اعادة تعيين">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>حقوق النشر &copy; 2026 Abd Al-fattah Akl. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
