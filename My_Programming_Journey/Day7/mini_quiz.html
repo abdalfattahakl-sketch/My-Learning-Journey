@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>النحو السالك - اختبار متقدم</title>
+    <meta name="description" content="An Exam for words type. اختبار على أنواع الكلمة">
+    <meta name="keywords" content="الكلمة, اسم, فعل , حرف , اللغة العربية , النحو">
+    <meta name="author" content="Abd Al-fattah Akl">
+    <meta name="copyright" content="Abd Alfattah Akl">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            width: 50vw;
+            padding: 0%;
+            margin: auto;
+            background: url(images/BG.png) center/cover;
+        }
+        header img{
+            width: 100%;
+        }
+        nav{
+            text-align: center;
+            background: gold;
+            border: 2px solid black;
+            
+        }
+        nav ul li{
+            display: inline-block;
+            padding: 0px 10px;
+            margin-left: 10px;
+            background-color: orange;
+        }
+        nav ul li a{
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            width:fit-content;
+            height: 30px;
+        }
+        nav ul li a:hover{
+            background: red;
+            color: white;
+            width: fit-content;
+            
+        }
+        nav ul li a:active{
+            background: pink;
+            color: gray;
+        }
+        fieldset{
+            width: 100%;
+            background-color: #abd8fd;
+            margin: 3px;
+        }
+        legend{
+            background-color: gold;
+            padding: 5px;
+            margin: 3px;
+            border:2px solid black;
+            text-align: center;
+            width: 150px;
+        }
+        .end{
+           text-align: center; 
+           color: red;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .btn{
+            text-align: center;
+            padding: 5px;
+        }
+        .btn button{
+            cursor: pointer;
+            padding: 5px 10px;
+            margin: 0px 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            background: gold;
+            width: 80px;
+            color: red;
+        }
+        .btn button:hover{
+            background-color: firebrick;
+            color: white;
+        }
+        footer{
+            text-align: center;
+            background:gold;
+            padding: 3px;
+            margin: 5px;
+            border: 2px solid black;
+            width: 100%;
+            font-size: small;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!--رؤية الصفحة
+    1-تنظيم الصفحة semantic element
+    2-تقسم الصفحة الى قسمين fieldset [بيانات شخصية - اسئلة الاختبار]
+    -->
+    <header>
+        <!--اضافة صورة للهيدر-->
+        <img src="images/header.png" alt="my header image" title="header image">
+    </header>
+    <nav>
+        <!--اضافة ناف بار عبارة عن 3 صفحات الرئيسة - الاختبار - اتصل بنا-->
+        <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="mini_quiz.html">الاختبار</a></li>
+            <li><a href="">اتصل بنا</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="#" method="post" enctype="application/x-www-form-urlencoded">
+        <!--عمل قسمين بالداخل كل قسم بداخل fieldset 
+        الاول user info
+        [username - email -class grade(select) 
+        - state (datalist) - gender (radio) -password (input)]-->
+        <fieldset class="user_info">
+            <legend>معلومات التلميذ</legend>
+            <div class="user">
+                <label for="user">اسم التلميذ</label>
+                <input type="text" id="user" name="username" required placeholder="اكتب اسمك الثلاثي">
+            </div>
+            <div class="mail">
+                <label for="email">البريد الالكتروني</label>
+                <input type="email" name="email" id="email" required placeholder="اكتب بريدك الشخصي">
+            </div>
+            <div class="gra">
+                <label for="grade">الصف الدراسي</label>
+                <select name="m_grade" id="grade">
+                    <optgroup label="صفوف أولى">
+                        <option value="grade1">الصف الأول</option>
+                        <option value="grade2" selected>الصف الثاني</option>
+                        <option value="grade3">الصف الثالث</option>
+                    </optgroup>
+                    <optgroup label="صفوف عليا">
+                        <option value="grade4">الصف الرابع</option>
+                        <option value="grade5">الصف الخامس</option>
+                        <option value="grade6">الصف السادس</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="sta">
+                <label for="mstate">اسم محافظتك</label>
+                <input id="mstate" list="state" name="state">
+                <datalist id="state">
+                    <option value="القاهرة">
+                    <option value="الجيزة">
+                    <option value="الدقهلية">
+                    <option value="الغربية">
+                    <option value="الشرقية">
+                    <option value="المنوفية">
+                    <option value="قنا">
+                    <option value="الاقصر">
+                    <option value="شمال سيناء">                             
+                </datalist>
+            </div>
+            <div class="gen">
+                <label>النوع:</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">أنثى</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">ذكر</label>
+                <input type="radio" id="non" name="gender" value="non">
+                <label for="non">غير ذلك</label>
+            </div>
+            <div class="pass">
+                <label for="pass">الرقم السري</label>
+                <input type="password" name="password" id="pass" required placeholder="لا يقل عن 5 احرف او ارقام" minlength="5">
+            </div>
+        </fieldset>
+       <!-- الثاني quest
+        سوف يتم استخدام اسئلة موضوعية عن طريق الاختيار select
+        -->
+        <fieldset class="questions">
+            <legend>الإختبار</legend>
+            <h2>اختر الاجابة الصحيحة للأسئلة الآتية:</h2>
+            <div class="quest1">
+                <label>السؤال الأول: ماهي حروف المد؟</label>
+                <select name="quest1" id="qust1">
+                    <option value="q1.1"> ن ، ه ، ي</option>
+                    <option value="q1.2"> ا ، ل ، س</option>
+                    <option value="q1.3"> ب ، ج ، ح</option>
+                    <option value="q1.4"> ا ، و ، ي</option>
+                </select>
+            </div>
+            <hr>
+            <div class="quest2">
+                <label>السؤال الثاني: حروف اللام القمرية مجموعة في</label>
+                <select name="quest2" id="qust2">
+                    <option value="q2.1">قطب جد</option>
+                    <option value="q2.2"> يرملون</option>
+                    <option value="q2.3"> ابغ حجك وخف عقيمه</option>
+                    <option value="q2.4"> سق ذا سما عفا </option>
+                </select>
+            </div>
+            <hr>
+            <div class="quest3">
+                <label>السؤال الثالث: تكتب الهمزة المتوسطة على ألف إذا سبقها</label>
+                <select name="quest3" id="qust3">
+                    <option value="q3.1"> حرف مفتوح</option>
+                    <option value="q3.2"> حرف مكسور</option>
+                    <option value="q3.3"> حرف ساكن</option>
+                    <option value="q3.4"> حرف مضموم</option>
+                </select>
+            </div>
+            <hr>
+            <div class="quest4">
+                <h3>اكتب 5 جمل أسمية:</h3>
+                <textarea name="quest4" cols="70" rows="7" >
+1-
+2-
+3-
+4-
+5-
+                </textarea>
+            </div>
+            <h3 class="end">انتهت الاسئلة دمتم موفقين</h3>
+        </fieldset>
+        <!--لاتنسى زر ارسال ومسح-->
+        <div class="btn">
+            <button type="submit">ارسال</button>
+            <button type="reset">مسح</button>
+        </div>
+        </form>
+    </main>
+    <footer>
+                <p>حقوق النشر &copy; 2026 Abd Al-fattah Akl. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
