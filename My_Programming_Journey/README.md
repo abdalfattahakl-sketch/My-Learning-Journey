@@ -23,38 +23,49 @@ Inside this repository, each folder represents a milestone dedicated to masterin
 * Configuring dynamic layout flows (`dir="rtl"` / `dir="ltr"`) to suit contextual project requirements.
 
 ### 📁 [day4](./day4) - Lists, Hyperlinks, & Semantic Architecture
-* **Milestone:** Built a fully integrated, multi-page educational web platform named "النحو السالك" consisting of 3 interconnected pages (`index.html`, `content.html`, `contactus.html`).
+* **Milestone:** Built a fully integrated, multi-page educational web platform named "النحو السالك" consisting of 3 interconnected pages.
 * **Skills Acquired:** Mastering relative file path trees (`../`), differentiating between the three list types (`<ul>`, `<ol>`, `<dl>`), and writing production-ready Semantic HTML5.
-* **Problem Solving:** Independently resolved CSS Specificity issues by targeting localized navigation selectors (`nav ul li`).
-* **Metrics:** Logged 2 hours and 40 minutes of deep, focused development utilizing Pomodoro blocks to solidify sustainable learning habits.
+* **Problem Solving:** Independently resolved CSS Specificity issues.
 
 ### 📁 [day5](./day5) - Form Engineering & User Experience (UX)
-* **Milestone:** Developed a comprehensive "Student Profile" module (`user.html`), enabling dynamic user data collection and interaction for the "النحو السالك" platform.
-* **Skills Acquired:** Mastering the `form` lifecycle (`GET` vs `POST`) and handling multi-part data encoding (`enctype`) for professional file uploads.
+* **Milestone:** Developed a comprehensive "Student Profile" module, enabling dynamic user data collection and interaction.
+* **Skills Acquired:** - Mastering the `form` lifecycle (GET vs POST) and secure data transmission.
+    - Implementing advanced input types (`file`, `color`, `range`, `tel`, `url`) with client-side validation (`required`, `min/max`).
+    - Handling multi-part data encoding (`enctype`) for professional file uploads.
 * **Architecture:** Utilizing `<fieldset>` and `<legend>` for logical data grouping and enhancing accessibility via precise `<label>`-`id` mapping.
-* **UX Integration:** Implementing advanced input types (`file`, `color`, `range`, `tel`, `url`) with instant client-side validation (`required`, `min/max`).
+* **Mental Model:** Applying "Atomic Habits" philosophy to bridge the gap between user intent and programmatic execution.
 
-### 📁 [day6](./day6) - Form Advanced Features, DOM Boundaries & Embedded UI
-* **Milestone:** Engineered a fully stylized, functional Quiz platform (`quiz.html`) integrated into the "النحو السالك" ecosystem to evaluate grade-4 students.
-* **Skills Acquired:** Implementing selective data flows using input limitations like `radio` (for single-choice questions) and `checkbox` (for multi-answer arrays).
-* **Aesthetics:** Formulated a cohesive visual scheme leveraging scoped container definitions (`width: 700px`, `margin: auto`) paired with strategic, unified color blocks (`firebrick` and `tomato`).
-* **Problem Solving:** Mitigated a critical DOM architecture bug by eliminating duplicated operational `id` tokens across distinct question containers, enforcing strict, unambiguous 1-to-1 mapping for all `<label>` bindings.
+### 📁 [day6](./day6) - Advanced Forms & UI Test Engineering
+* **Milestone:** Developed the initial interactive quiz engine interface (`quiz.html`) for the "النحو السالك" platform.
+* **Skills Acquired:**
+    - Mastering single-choice mechanics using `<input type="radio">` with unified name attributes to prevent logical data conflicts.
+    - Implementing multi-choice checkboxes and native datetime selectors (`date`, `time`) for session logging.
+    - Managing CSS element specificity, cursor behaviors (`cursor: pointer`), and responsive container centering.
+* **Problem Solving:** Overcoming duplicate ID conflicts in dynamic quiz structures to maintain clean DOM label relationships.
+
+### 📁 [day7](./day7) - UI Wireframing, Layout Segregation & Cascading Elements
+* **Milestone:** Engineered a comprehensive, production-ready interactive examination portal featuring deep SEO optimization and responsive layout distribution (`50vw` viewport isolation).
+* **Skills Acquired:**
+    - **Architectural Wireframing:** Adopting a "design-first" approach by sketching UI blueprints on paper to pre-calculate DOM hierarchies before writing code.
+    - **Component Segregation:** Isolating user identification schemas from computational quiz elements using multiple scoped `<fieldset>` structures.
+    - **Advanced Selectors:** Utilizing nested `<optgroup>` semantic wrappers for structural data grouping (lower vs. upper primary school tiers) and `<datalist>` for scalable, predictive type-ahead search strings.
+* **UX Strategy:** Resolving cascading navigation nightmares through a "two-step action" mental model, moving logic away from destructive option links into centralized button executions.
 
 ---
 
 ## 🛠️ Tech Stack & Tools
 
-* **Languages:** HTML5 (Semantic Structure & Advanced Forms), CSS3 (Visual Architecture & Component Styling)
+* **Languages:** HTML5 (Semantic Structure, Advanced Form Architectures, SEO Metadata Initialization) & CSS3 (Dynamic Layouts, Viewport Units, Pseudo-classes, Transitions)
 * **Version Control:** Git & GitHub
-* **Development Environment:** VS Code
+* **Development Environments:** VS Code (Desktop Deployment) & Acode / Spck Editor (Mobile Tablet Environment for seamless workplace synchronization)
 * **Operating System:** Ubuntu 24.04 LTS (Noble Numbat)
 
 ---
 
 ## 🧠 Core Philosophy & Methodology
 
-> *"Consistent marginal gains beat sporadic bursts of effort."* 
-> This journey thrives on consistency—valuing focused, active development blocks to internalize development patterns and cultivate an engineering-oriented mindset.
+> *"Consistent marginal gains beat sporadic bursts of effort."*
+> This journey thrives on consistency—valuing focused, active development blocks to internalize development patterns, prevent digital burnout, and cultivate an engineering-oriented mindset.
 
 ---
 
