@@ -51,6 +51,13 @@ Inside this repository, each folder represents a milestone dedicated to masterin
     - **Advanced Selectors:** Utilizing nested `<optgroup>` semantic wrappers for structural data grouping (lower vs. upper primary school tiers) and `<datalist>` for scalable, predictive type-ahead search strings.
 * **UX Strategy:** Resolving cascading navigation nightmares through a "two-step action" mental model, moving logic away from destructive option links into centralized button executions.
 
+### 📁 [day8](./day8) [teacher-portfolio](./teacher-portfolio) - Full Architecture, Table Row-Spanning & Breaking Perfectionism
+* **Milestone:** Engineered a fully integrated, 4-page responsive personal educator portal ("بوابة المعلم الذكية") comprising: Home (`index.html`), Digital Library (`downloads.html`), Virtual Classroom (`classroom.html`), and Contact Hub (`contact.html`).
+* **Skills Acquired:**
+    - **Advanced Data Structures:** Mastering complex HTML5 table architectures using deep row-spanning (`rowspan="4"`) to cleanly organize multi-part syntactic text references.
+    - **Asset Link Optimization:** Utilizing direct phone (`tel:`) and email (`mailto:`) protocols alongside advanced target attributes for seamless outer-network navigation.
+    - **Viewport Display Transformations:** Overriding native block behaviors by injecting `display: inline-block` into lists to build pristine, semantic navigation bars.
+* **Mental Model Evolution:** Completely breaking the trap of "Perfectionism" by adopting the standard tech philosophy: *"Done is better than perfect."* Discovered the core CSS parent-child relationship (how block containers wrap and direct inline children using `text-align: center` vs. `margin: auto`).
 ---
 
 ## 🛠️ Tech Stack & Tools
